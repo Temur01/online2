@@ -1,13 +1,250 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  background-color: #17161c;
+  padding: 0 50px;
+}
+.flexing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-size: 600;
+}
+a:hover {
+  color: #fe805d;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+}
+.headerOfBottom {
+  padding: 40px 220px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nameTitle {
+  font-size: 82px;
+  font-weight: 400;
+  color: #fe805d;
+  line-height: 0;
+}
+.priceTitle {
+  font-size: 23px;
+  color: white;
+  font-weight: 300;
+}
+.image {
+  position: absolute;
+  top: 140px;
+  left: 180px;
+  width: 238px;
+  height: 263px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 4px;
+}
+#sectionFirst {
+  background-color: #2d2c31;
+  padding: 180px 230px 100px 230px;
+}
+.row {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  color: white;
+}
+.exact {
+  background-color: #201f25;
+}
+.exact img {
+  width: 400px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+.buttons button {
+  color: #fe805d;
+  border: 1px#fe805d solid;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 12px 40px;
+  transition: 0.1s;
+}
+.buttons button:hover {
+  background-color: #fe805d;
+  color: black;
+  overflow: hidden;
+}
+.exact h1 {
+  font-size: 45px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.mainWord {
+  margin-top: 40px;
+}
+.expressing {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.order {
+  font-size: 30px;
+  margin: 80px 0;
+}
+.secondPage {
+  background-color: #1f222f;
+  padding: 60px 50px;
+}
+.secondPage h1 {
+  font-size: 45px;
+  color: #fe805d;
+  text-align: center;
+}
+.trigger {
+  font-size: 60px;
+  color: #fe805d;
+  line-height: 0px;
+  text-align: center;
+}
+.titleInfo {
+  color: white;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.declaration {
+  color: #fe805d;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.thirdPage {
+  background-color: #17161c;
+  padding: 80px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.thirdPage h1 {
+  font-size: 45px;
+  color: #fe805d;
+  line-height: 0;
+  font-weight: 500 !important;
+}
+.thirdP {
+  font-size: 16px;
+  color: white;
+  font-weight: 400 !important;
+  padding: 25px 500px;
+  text-align: center;
+}
+.line {
+  border-top: 1px solid white;
+  width: 20%;
+  text-align: center;
+}
+.box {
+  border: 1px solid white;
+  padding: 50px 40px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.box p {
+  font-size: 20px;
+  color: white;
+  width: 800px;
+  text-align: center;
+  line-height: 30px;
+}
+.btn {
+  padding: 10px 40px;
+  border-radius: 16px;
+  border: 1px solid #fe805d;
+  background-color: transparent;
+  color: #fe805d;
+  font-size: 16px;
+  transition: 0.1s;
+  margin-top: 20px;
+}
+.btn:hover {
+  border: 1px solid #fe805d;
+  background-color: #fe805d;
+  color: black;
+  font-size: 18px;
+}
+.innerDiv {
+  background-color: #1f222f;
+  padding: 180px 300px 100px 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  width: 90%;
+}
+.nameWord {
+  font-size: 45px;
+  color: #fe805d;
+  font-weight: 500;
+}
+.description {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.circleImage {
+  border-radius: 50%;
+  width: 177px;
+  height: 177px;
+  position: absolute;
+  bottom: 550px;
+  left: 660px;
+}
+footer {
+  background-color: #fe805d;
+  padding: 10px 0;
+}
+.lastWord {
+  text-align: center;
+  color: black;
+  margin: 0;
 }
